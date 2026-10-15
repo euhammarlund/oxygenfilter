@@ -1,0 +1,30 @@
+{
+ "run_id": "grid-2026-10-15",
+ "created": "2026-10-15T13:41:24.877Z",
+ "curves": [
+  "COPSE",
+  "Mills_mid",
+  "Mills_min",
+  "Mills_max"
+ ],
+ "checks": [
+  {
+   "name": "clade",
+   "label": "Clade-level model set",
+   "pass": true,
+   "detail": "3,536 fits over 4 curves and 17 clades; max |\u0394AICc| 3.5e-3 (99.9% of fits below 1e-4); best model agrees in 271/272 (one near-tie under Mills max)"
+  },
+  {
+   "name": "holdout",
+   "label": "Held-out prediction",
+   "pass": true,
+   "detail": "816 held-out scores; max |\u0394 log L| 6.9e-3 except one degenerate fit (Foraminifera extinction, linear O\u2082, Mills max: \u22122533.1 vs \u22122533.2, relative 6e-5)"
+  },
+  {
+   "name": "joint",
+   "label": "Joint shared-slope fits",
+   "pass": true,
+   "detail": "Python only (13-clade fits are too slow for the browser); shown from the batch store"
+  }
+ ]
+}
